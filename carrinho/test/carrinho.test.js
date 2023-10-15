@@ -44,6 +44,7 @@ describe('Testes do meu carrinho', () => {
     }
     const retornado = meuCarrinho.finalizaCompra()
     // Como o retorno ta sendo uma string, a gente usa o StrictEqual
+    // Afinal, o Jest serializa o valor retornado.
     expect(retornado).toStrictEqual(esperado)
   })
 
